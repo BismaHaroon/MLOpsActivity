@@ -35,4 +35,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+      - name: Run Tests
+        run: |
+          pytest test_calculator.py
+        working-directory: test_calculator.py
+        
+
       
